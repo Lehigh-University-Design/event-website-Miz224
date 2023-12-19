@@ -1,16 +1,17 @@
 body {
-    color: #000;
+    color: #000000;
     font-family: 'Times New Roman', serif;
     max-width: 1200px;
-    margin: 20px auto; /* this adds space at the top and bottom */
-    padding: 20px; /* this adds padding around the content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* optional: adds shadow for a lifted paper effect */
-	background: url(images/oldPaper.jpeg);; /* this is the color of the newspaper */
-
+    margin: 20px auto; /*Adds space at the top and bottom*/
+    padding: 20px; /*Adds padding around the content*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*Adds shadow for a lifted paper effect*/
+	background: url(images/oldPaper.jpeg);; /*Newspaper texture background*/
 }
 
 header h1 {
-    font-size: 48px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+    font-size: 75px;
     text-align: center;
 	align-items: center;
 }
@@ -18,38 +19,71 @@ header h1 {
 header h2 {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 	10px;
 }
 
 img {
 	opacity: 70%;
 }
 
+hr {
+	position: relative;
+	top: 10px;
+	border: none;
+	height: 3px;
+	background: #000000;
+	margin-bottom: 20px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.htext {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+
+.base {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+}
+
 main {
     display: flex;
-
     justify-content: space-between;
-    padding: 20px; /* padding around the columns */
-    gap: 20px; /* space between columns */
+    padding: 20px; /*Adds padding around the columns*/
+    gap: 20px; /*Adds space between columns*/
 }
 
 .column {
-    width: calc(50% - 20px); /* adjust the width to account for the gap */
+    width: 100%; /*Adjust the width to account for the gap*/
     box-sizing: border-box;
 	
 }
 
 .column:not(:first-child) {
-    border-left: 2px solid #000;
+    /* border-left: 2px solid #000000; */
 }
 
 .column article {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000000;
     margin-bottom: 20px;
 }
 
 .column h3 {
-    font-size: 20px;
+    font-size: 40px;
     margin-bottom: 5px;
 }
 
@@ -61,4 +95,5 @@ main {
 
 .column p {
     text-align: justify;
+	font-size: 20px;
 }
